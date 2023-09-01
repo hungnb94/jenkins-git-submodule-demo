@@ -12,11 +12,10 @@ pipeline {
   stages {
     stage('Build debug app') {
       agent {
-        docker {
-          image 'hungnb94/androidsdkmacos'
+        dockerfile {
+          dir 'cicd/androidsdk'
           reuseNode true
           args "-v $HOME/.gradle:/root/.gradle"
-          additionalBuildArgs  '--build-arg PLATFORM_VERSION=android-31'
         }
       }
       steps {
@@ -26,11 +25,10 @@ pipeline {
 
     stage('Local unit test') {
       agent {
-        docker {
-          image 'hungnb94/androidsdkmacos'
+        dockerfile {
+          dir 'cicd/androidsdk'
           reuseNode true
           args "-v $HOME/.gradle:/root/.gradle"
-          additionalBuildArgs  '--build-arg PLATFORM_VERSION=android-31'
         }
       }
       steps {
