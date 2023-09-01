@@ -1,6 +1,4 @@
-FROM hungnb94/androidsdkmacos
-
-ARG TARGETARCH
+FROM hungnb94/androidsdklinux
 
 USER root
 
