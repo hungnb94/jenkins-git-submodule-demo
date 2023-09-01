@@ -88,8 +88,6 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     api project(':framework_ex')
-    compileOnly project(':legacy')
-//    compileOnly files(getLayoutLibPath(android))
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
     implementation 'com.google.guava:guava:31.1-android'
     api 'com.github.bumptech.glide:glide:3.8.0'
