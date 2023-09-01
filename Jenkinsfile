@@ -16,6 +16,7 @@ pipeline {
           image 'hungnb94/androidsdkmacos'
           reuseNode true
           args "-v $HOME/.gradle:/root/.gradle"
+          additionalBuildArgs  '--build-arg PLATFORM_VERSION=android-31'
         }
       }
       steps {
@@ -29,6 +30,7 @@ pipeline {
           image 'hungnb94/androidsdkmacos'
           reuseNode true
           args "-v $HOME/.gradle:/root/.gradle"
+          additionalBuildArgs  '--build-arg PLATFORM_VERSION=android-31'
         }
       }
       steps {
