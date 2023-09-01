@@ -12,7 +12,6 @@ gen/
 /build/
 */build/
 /gradle/
-/gradlew
 /gradlew.bat
 /local.properties
 
