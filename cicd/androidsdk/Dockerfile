@@ -1,4 +1,4 @@
-FROM hungnb94/androidsdklinux
+FROM hungnb94/androidsdklinux:1.0
 
 USER root
 
